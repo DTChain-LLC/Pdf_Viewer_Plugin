@@ -43,20 +43,20 @@ public class PdfViewer implements PlatformView, MethodCallHandler {
     }
 
     private void loadPdfView() {
-//         pdfView.fromFile(new File(filePath))
-//                 .enableSwipe(true) // allows to block changing pages using swipe
-//                 .swipeHorizontal(false)
-//                 .enableDoubletap(true)
-//                 .defaultPage(0)
-//                 .enableAnnotationRendering(true)
-//                 .load();
-                pdfView.fromUri(filePath)
+        pdfView.fromFile(new File(filePath))
                 .enableSwipe(true) // allows to block changing pages using swipe
                 .swipeHorizontal(false)
                 .enableDoubletap(true)
                 .defaultPage(0)
                 .enableAnnotationRendering(true)
                 .load();
+//                 pdfView.fromUri(filePath)
+//                 .enableSwipe(true) // allows to block changing pages using swipe
+//                 .swipeHorizontal(false)
+//                 .enableDoubletap(true)
+//                 .defaultPage(0)
+//                 .enableAnnotationRendering(true)
+//                 .load();
 
     }
 
